@@ -1,0 +1,30 @@
+b {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.network {
+    margin-top: 20px;
+}
+.network__contacts {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--main-color);
+
+    transition: background-color var(--trns-fast);
+
+    &:focus,
+    &:hover {
+        background-color: var(--accent-color);
+    }
+}
+

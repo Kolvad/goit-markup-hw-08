@@ -1,0 +1,34 @@
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-color);
+
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    fill: var(--second-color);
+
+    transition-property: color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+
+    &:focus,
+    &:hover {
+    color: var(--accent-color);
+    fill: currentColor;
+    }
+}
+.contact__img {
+    margin-right: 10px;
+}
+.img-tel {
+    margin-left: 30px;
+}

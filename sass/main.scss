@@ -1,0 +1,30 @@
+// utils styles
+
+@import './utils/_variables.scss';
+@import './utils/v-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+// base styles
+
+@import './base/_base.scss';
+
+// components styles
+@import './components/section';
+@import './components/container';
+@import './components/buttons';
+@import './components/header';
+@import './components/logo';
+@import './components/navigation';
+@import './components/contacts';
+@import './components/first';
+@import './components/second';
+@import './components/third';
+@import './components/fourth';
+@import './components/fifth';
+@import './components/footer';
+@import './components/adress';
+@import './components/network';
+@import './components/form-network';
+@import './components/portfolio';
+@import './components/modal';

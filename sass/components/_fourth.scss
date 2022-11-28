@@ -1,0 +1,69 @@
+.fourth {
+    @extend %indent;
+    background-color: #F5F4FA;
+}
+.employees {
+    justify-content: space-between;
+}
+.employee {
+    width: 270px;
+    background-color: var(--main-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.employee__about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.employee__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+.employee__position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+    margin-bottom: 16px;
+}
+.employee__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.employee__network {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.employee__network-contact {
+    fill: #AFB1B8;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    transition: background-color var(--trns-fast), fill var(--trns-fast);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: var(--accent-color);
+        fill: var(--main-color);
+    }
+}
