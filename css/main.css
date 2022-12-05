@@ -20,9 +20,21 @@
   overflow: hidden;
 }
 
-.portfolio, .fifth, .fourth, .third {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.portfolio, .fifth, .fourth, .third, .second {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio, .fifth, .fourth, .third, .second {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio, .fifth, .fourth, .third, .second {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 body {
@@ -50,6 +62,11 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.indent {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container {
@@ -342,9 +359,11 @@ h1 {
   margin: auto;
 }
 
-.second {
-  padding-top: 94px;
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .second {
+    padding-top: 94px;
+    padding-bottom: 0px;
+  }
 }
 
 h2 {
