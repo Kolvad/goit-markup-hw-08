@@ -1,7 +1,7 @@
 .first {
     background-color: #C4C4C4;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -10,7 +10,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  
+
+    @media screen and (max-width: 767px) {
+        min-width: 480px;
+        height: 400px;
+    }
+
+    @media screen and (max-width: $desktop) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 h1 {
     font-weight: 900;
@@ -22,4 +36,10 @@ h1 {
     color: var(--main-color);
     width: 700px;
     margin: auto;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 26px;
+        line-height: 1.61;
+        width: 360px;
+    }
 }

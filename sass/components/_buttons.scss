@@ -20,6 +20,10 @@
     margin: 30px auto 0;
     width: 216px;
     height: 50px;
+
+    @media screen and (max-width: 1199px) {
+        width: 200px;
+    }
 }
 // portfolio
 .btns {
@@ -98,4 +102,16 @@
 .btn__modal {
     padding: 0;
     width: 200px;
+}
+
+.btn-menu:focus,
+.btn-menu:hover {
+    transition: var(--trns-fast);
+    fill: var(--accent-color)
+}
+
+.btn__menu-close:focus,
+.btn__menu-close:hover {
+    transition: var(--trns-fast);
+    fill: var(--accent-color)
 }

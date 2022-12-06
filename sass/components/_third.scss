@@ -1,5 +1,12 @@
 .third {
     @extend %indent;
+    @media screen and (min-width: $mobile) {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 .office {
     justify-content: space-between;  

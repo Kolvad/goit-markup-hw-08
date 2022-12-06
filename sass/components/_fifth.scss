@@ -5,6 +5,22 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto; 
+
+    @media screen and (min-width: $mobile) {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 .client {
     border: 1px solid #AFB1B8;
@@ -34,5 +50,16 @@
     &:focus,
     &:hover {
         fill: var(--accent-color);
+    }
+    
+    @media screen and (min-width: $mobile) {
+        width: 208px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 224px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 168px;
     }
 }
