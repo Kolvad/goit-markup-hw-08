@@ -9,10 +9,36 @@
 .link-img:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.list-img__list{
+    @media screen and (max-width: 767.98px) {
+        width: 450px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 370px;
+        
+    }
+}
+
 .image {
     position: relative;
     overflow: hidden;
 }
+
+.picture {
+    height: 294px;
+
+    @media screen and (max-width: 767.98px) {
+        width: 100%;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 100%;
+    }
+}
+
 .image__overlay {
     display: flex;
     align-items: center;
@@ -40,10 +66,17 @@
     padding: 0 24px;
 }
 .image__text {
-    padding: 20px 24px;
+    padding: 20px 0 20px 24px;
     width: 370px;
     border: 1px solid #ECECEC;
     border-top: none;
+
+   @media screen and (max-width: 767.98px) {
+        width: 100%;
+    } 
+    @media screen and (min-width: $tablet) {
+        width: 100%;
+    }
 }
 .image__text--title {
     font-weight: 700;

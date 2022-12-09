@@ -38,7 +38,6 @@
         content: '';
         display: block;
         position: absolute;
-        bottom: -1px;
         left: -1px;
         width: 106%;
         height: 4px;
@@ -47,6 +46,13 @@
         opacity: 0;
         transform: scalex(0.2);
         transition: opacity var(--trns-fast),transform var(--trns-fast);
+        
+        @media screen and (min-width: $tablet) {
+            bottom: -2px;
+        }
+        @media screen and (min-width: $desktop) {
+            bottom: -1px;
+        }
     }
     &.active::after,
     &:hover::after,

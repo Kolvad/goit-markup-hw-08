@@ -11,8 +11,8 @@
     background-size: cover;
     background-position: center;
 
-    @media screen and (max-width: 767px) {
-        min-width: 480px;
+    @media screen and (max-width: 767.98px) {
+        width: 480px;
         height: 400px;
     }
 
@@ -34,12 +34,22 @@ h1 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-color);
-    width: 700px;
     margin: auto;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 479.98px) {
+        font-size: 26px;
+        line-height: 1.61;
+        width: 100%;
+    }
+
+    @media screen and (min-width: $mobile) {
         font-size: 26px;
         line-height: 1.61;
         width: 360px;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 700px;
     }
 }

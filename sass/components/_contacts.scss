@@ -1,23 +1,28 @@
 .contacts {
-    display: flex;
     margin-left: auto;
 
     @media screen and (max-width: 767.98px) {
         display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        padding: 0;
     }
 }
 .contact {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--second-color);
 
     position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
     fill: var(--second-color);
 
     transition-property: color;
@@ -29,10 +34,48 @@
     color: var(--accent-color);
     fill: currentColor;
     }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 12px;
+        line-height: 1.16;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.14;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+.mt {
+    margin-top: 10px;
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 0;
+    }
 }
 .contact__img {
-    margin-right: 10px;
+    @media screen and (min-width: $tablet) {
+        margin-right: 8px;
+        width: 14px;
+        height: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+    }
 }
 .img-tel {
-    margin-left: 30px;
+    @media screen and (min-width: $tablet) {
+        margin-right: 8px;
+        width: 10px;
+        height: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-left: 30px;
+        width: 10px;
+        height: 16px;
+    }
 }

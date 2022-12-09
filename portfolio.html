@@ -25,7 +25,7 @@
             <a href="index.html" class="logo header__logo">
                 <span class="web">Web</span>Studio
             </a>
-            <nav>
+            <nav class="nav">
                 <ul>
                     <li class="nav__services">
                         <a 
@@ -49,7 +49,7 @@
             <ul class="contacts">
                 <li>
                     <a
-                    class="contact"
+                    class="contact "
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     href="mailto:info@devstudio.com">
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                     <a 
-                    class="contact"
+                    class="contact mt"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     href="tel:+380961111111">
@@ -71,7 +71,16 @@
                     +38 096 111 11 11
                   </a>
                 </li>
-              </ul>
+            </ul>
+            <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                >
+                <svg class="btn-menu" width="40" height="40">
+                    <use href="./img/icons.svg#menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -99,15 +108,13 @@
             </div>
             <div class="container">
                 <ul class="list-img">
-                    <li>
+                    <li class="list-img__list">
                         <a class="link-img"
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         href="#1">
                         <div class="image">
-                            <img 
-                            width="370"
-                            height="294"
+                            <img class="picture"
                             src="./img/portfolio/portfolio1.jpg" alt="Портфоліо1">
                             <div class="image__overlay">
                                 <p class="image__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -119,15 +126,13 @@
                             </div>
                         </a>  
                     </li>
-                    <li>
+                    <li class="list-img__list">
                         <a class="link-img"
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         href="#2">
                         <div class="image">
-                            <img 
-                            width="370"
-                            height="294"
+                            <img class="picture"
                             src="./img/portfolio/portfolio2.jpg" alt="Портфоліо2">
                             <div class="image__overlay">
                                 <p class="image__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iste accusamus rem ullam nisi inventore reiciendis laborum. Suscipit, quasi necessitatibus.</p>
@@ -139,13 +144,13 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="list-img__list">
                         <a class="link-img"
                         target="_blank"
                         rel="noopener noreferrer nofollow" 
                         href="#3">
                         <div class="image">
-                            <img 
+                            <img class="picture" 
                             width="370"
                             height="294"
                             src="./img/portfolio/portfolio3.jpg" alt="Портфоліо3">
@@ -159,13 +164,13 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="list-img__list">
                         <a class="link-img"
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         href="#4">
                         <div class="image">
-                            <img 
+                            <img class="picture" 
                             width="370"
                             height="294"
                             src="./img/portfolio/portfolio4.jpg" alt="Портфоліо4">
@@ -179,13 +184,13 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="list-img__list">
                         <a class="link-img"
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         href="#5">
                         <div class="image">
-                            <img 
+                            <img class="picture" 
                             width="370"
                             height="294"
                             src="./img/portfolio/portfolio5.jpg" alt="Портфоліо5">
@@ -199,13 +204,13 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="list-img__list">
                         <a class="link-img"
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         href="#6">
                         <div class="image">
-                            <img 
+                            <img class="picture" 
                             width="370"
                             height="294"
                             src="./img/portfolio/portfolio6.jpg" alt="Портфоліо6">
@@ -219,13 +224,13 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="list-img__list">
                         <a class="link-img"
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         href="#7">
                         <div class="image">
-                            <img 
+                            <img class="picture" 
                             width="370"
                             height="294"
                             src="./img/portfolio/portfolio7.jpg" alt="Портфоліо7">
@@ -239,13 +244,13 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="list-img__list">
                         <a class="link-img"
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         href="#8">
                         <div class="image">
-                            <img 
+                            <img class="picture" 
                             width="370"
                             height="294"
                             src="./img/portfolio/portfolio8.jpg" alt="Портфоліо8">
@@ -259,13 +264,13 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="list-img__list">
                         <a class="link-img"
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         href="#9">
                         <div class="image">
-                            <img 
+                            <img class="picture" 
                             width="370"
                             height="294"
                             src="./img/portfolio/portfolio9.jpg" alt="Портфоліо9">
@@ -286,81 +291,84 @@
 
     <footer class="footer">
         <div class="container footer__container">
-          <div class="first__footer">
-            <a 
-            href="index.html" 
-            class="logo footer__logo">
-            <span class="web">Web</span>Studio
-            </a>
-            <address>
-              <ul class="address">
-                  <li>
-                      <a 
-                      class="address__map"
-                      href="https://goo.gl/maps/7wfxN3DCD1bhWvAn9" 
-                      target="_blank" 
-                      rel="noopener noreferrer nofollow"
-                      >м. Київ, пр-т Лесі Українки, 26</a>
-                  </li>
-                  <li>
-                      <a 
-                      class="address__contact"
-                      href="mailto:info@devstudio.com"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      >info@devstudio.com</a>
-                  </li>
-                  <li>
-                      <a 
-                      class="address__contact tel"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      href="tel:+380961111111">+38 096 111 11 11</a>
-                  </li>
-              </ul>
-            </address>
-          </div>
-          <div class="second__footer">
-              <b>приєднуйтесь</b>
-              <ul class="network">
-                <li>
-                  <a
-                  class="network__contacts" 
-                  href="">                
-                    <svg  width="20" height="20">
-                      <use href="./img/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                  class="network__contacts" 
-                  href="">
-                    <svg  width="20" height="20">
-                      <use href="./img/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                  class="network__contacts" 
-                  href="">
-                    <svg  width="20" height="20">
-                      <use href="./img/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                  class="network__contacts" 
-                  href="">
-                    <svg  width="20" height="20">
-                      <use href="./img/icons.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-          </div>
+            <div class="footer__container-tablet">
+                <div class="first__footer">
+                    <a 
+                        href="index.html" 
+                        class="logo footer__logo">
+                        <span class="web">Web</span>Studio
+                    </a>
+                    <address>
+                      <ul class="address">
+                          <li>
+                              <a 
+                              class="address__map"
+                              href="https://goo.gl/maps/7wfxN3DCD1bhWvAn9" 
+                              target="_blank" 
+                              rel="noopener noreferrer nofollow"
+                              >м. Київ, пр-т Лесі Українки, 26</a>
+                          </li>
+                          <li>
+                              <a 
+                              class="address__contact"
+                              href="mailto:info@devstudio.com"
+                              target="_blank"
+                              rel="noopener noreferrer nofollow"
+                              >info@devstudio.com</a>
+                          </li>
+                          <li>
+                              <a 
+                              class="address__contact tel"
+                              target="_blank"
+                              rel="noopener noreferrer nofollow"
+                              href="tel:+380961111111">+38 096 111 11 11</a>
+                          </li>
+                      </ul>
+                    </address>
+                </div>
+                <div class="second__footer">
+                    <b>приєднуйтесь</b>
+                    <ul class="network">
+                        <li>
+                            <a
+                            class="network__contacts" 
+                            href="">                
+                                <svg  width="20" height="20">
+                                <use href="./img/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                            class="network__contacts" 
+                            href="">
+                                <svg  width="20" height="20">
+                                <use href="./img/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                            class="network__contacts" 
+                            href="">
+                                <svg  width="20" height="20">
+                                <use href="./img/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                            class="network__contacts mr" 
+                            href="">
+                                <svg  width="20" height="20">
+                                <use href="./img/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                 </div>
+            </div>
+          
           <div class="third__footer">
             <b>Підпишіться на розсилку</b>
             <form class="form__network" name="booking_form">
@@ -376,5 +384,64 @@
           </div>
         </div>
     </footer>
+
+        <!-- Mobile menu -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg class="btn__menu-close" width="40" height="40">
+                <use href="./img/icons.svg#close"></use>
+              </svg>
+            </button>
+      
+            <ul class="mobile-menu">
+              <li>
+                <a href="index.html" class="mobile-menu__nav">Студія</a>
+              </li>
+              <li>
+                <a 
+                rel="noopener noreferrer nofollow"
+                href="portfolio.html" class="mobile-menu__nav">Портфоліо</a>
+              </li>
+              <li>
+                <a href="#" class="mobile-menu__nav">Контакти</a>
+              </li>
+            </ul>
+            <ul class="mobile-contacts">
+              <li>
+                <a 
+                  class="mobile-contacts__tel"
+                  rel="noopener noreferrer nofollow"
+                  href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li>
+                <a 
+                  class="mobile-contacts__mail"
+                  rel="noopener noreferrer nofollow"
+                  href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mobile-socials">
+                <a href="" class="mobile-socials__contact">Instagram</a>
+              </li>
+              <li class="mobile-socials">
+                <a href="" class="mobile-socials__contact">Twitter</a>
+              </li>
+              <li class="mobile-socials">
+                <a href="" class="mobile-socials__contact">Facebook</a>
+              </li>
+              <li class="mobile-socials">
+                <a href="" class="mobile-socials__contact">LinkedIn</a>
+              </li>
+            </ul>
+        </div>
+
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -2,21 +2,41 @@
     display: block;
     font-style: normal;
     width: 231px;
-    margin-right: 70px;
-    margin-top: 20px;
+    
+
+    @media screen and (max-width: 767.98px) {
+        width: 100%;
+        margin: auto;
+        margin-top: 28px;
+    }
+    @media screen and (min-width: $tablet) {
+        text-align: center;
+        margin-right: 0;
+    }
+    @media screen and (min-width: $desktop) {
+        text-align: left;
+        margin-right: 70px;
+        margin-top: 20px;
+    }
 }
 .address__map {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-color);
-    margin-bottom: 9px;
 
     transition: color var(--trns-fast);
 
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+
+    @media screen and (max-width: 1199.98px) {
+        margin-bottom: 12px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 9px;
     }
 }
 
@@ -32,6 +52,13 @@
    &:hover,
    &:focus {
         color: var(--accent-color);
+    }
+
+    @media screen and (max-width: 1199.98px) {
+        margin-bottom: 12px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 9px;
     }
 }
 
