@@ -151,11 +151,23 @@
           <div>
             <ul class="office">
               <li class="office__img">
-                <img
-                width="370"
-                height="294" 
-                src="./img/jpg/keyboard.jpg" alt="Клавиатура"
-                >
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./img/office/img_370-1.webp 1x, ./img/office/img_740-1.webp 2x"
+                    type="image/webp"
+                  >
+                  <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./img/office/img_370-1.jpg 1x, ./img/office/img_740-1.jpg 2x"
+                    type="image/jpg"
+                  >
+                  <img
+                    width="370"
+                    height="294"
+                    src="./img/office/img_370-1.jpg" alt="Клавиатура"
+                  >
+                </picture>
                 <div class="office__item">
                   <p class="office__text">
                     Десктопні додатки
@@ -163,11 +175,23 @@
                 </div>
               </li>
               <li class="office__img">
-                <img
-                width="370"
-                height="294"
-                src="./img/jpg/phone.jpg" alt="Телефон"
-                >
+                <picture>
+                  <source
+                    media="(min-width: 1200px)" 
+                    srcset="./img/office/img_370-2.webp 1x, ./img/office/img_740-2.webp 2x"
+                    type="image/webp"
+                  >
+                  <source
+                    media="(min-width: 1200px)" 
+                    srcset="./img/office/img_370-2.jpg 1x, ./img/office/img_740-2.jpg 2x"
+                    type="image/jpg"
+                  >
+                  <img
+                    width="370"
+                    height="294"
+                    src="./img/office/img_370-2.jpg" alt="Телефон"
+                  >
+                </picture>
                 <div class="office__item">
                   <p class="office__text">
                     Мобільні додатки
@@ -175,11 +199,23 @@
                 </div>
               </li>
               <li class="office__img">
-                <img 
-                width="370"
-                height="294"
-                src="./img/jpg/tablet.jpg" alt="Планшет"
-                >
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./img/office/img_370-3.webp 1x, ./img/office/img_740-3.webp 2x"
+                    type="image/webp"
+                  >
+                  <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./img/office/img_370-3.jpg 1x, ./img/office/img_740-3.jpg 2x"
+                    type="image/jpg"
+                  >
+                  <img 
+                    width="370"
+                    height="294"
+                    src="./img/office/img_370-3.jpg" alt="Планшет"
+                  >
+                </picture>
                 <div class="office__item">
                   <p class="office__text">
                     Дизайнерські рішення
@@ -196,10 +232,19 @@
           <ul class="employees">
             <li class="employee">
               <img class="employee-img"
-                src="./img/foto/ihor.jpg"
+                width="450"
+                height="460"
+                srcset="
+                  ./img/team/img-1_270.jpg 270w, 
+                  ./img/team/img-1_354.jpg 354w, 
+                  ./img/team/img-1_450.jpg 450w, 
+                  ./img/team/img-1_540.jpg 540w, 
+                  ./img/team/img-1_708.jpg 708w, 
+                  ./img/team/img-1_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./img/team/img-1_450.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
               >
               <div class="employee__about">
                 <h3 class="employee__name">Ігор Дем'яненко</h3>
@@ -246,10 +291,19 @@
             </li>
             <li class="employee">
               <img class="employee-img"
-                src="./img/foto/olga.jpg"
-                alt="Ольга Рєпіна"
                 width="270"
                 height="260"
+                srcset="
+                  ./img/team/img-2_270.jpg 270w, 
+                  ./img/team/img-2_354.jpg 354w, 
+                  ./img/team/img-2_450.jpg 450w, 
+                  ./img/team/img-2_540.jpg 540w, 
+                  ./img/team/img-2_708.jpg 708w, 
+                  ./img/team/img-2_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./img/team/img-2_450.jpg"
+                alt="Ольга Рєпіна"
               >
               <div class="employee__about">
                 <h3 class="employee__name">Ольга Рєпіна</h3>
@@ -296,10 +350,19 @@
             </li>
             <li class="employee">
               <img class="employee-img"
-                src="./img/foto/mykola.jpg"
-                alt="Микола Тарасов"
                 width="270"
                 height="260"
+                srcset="
+                  ./img/team/img-3_270.jpg 270w, 
+                  ./img/team/img-3_354.jpg 354w, 
+                  ./img/team/img-3_450.jpg 450w, 
+                  ./img/team/img-3_540.jpg 540w, 
+                  ./img/team/img-3_708.jpg 708w, 
+                  ./img/team/img-3_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./img/team/img-3_450.jpg"
+                alt="Микола Тарасов"
               >
               <div class="employee__about">
                 <h3 class="employee__name">Микола Тарасов</h3>
@@ -346,10 +409,19 @@
             </li>
             <li class="employee">
               <img class="employee-img"
-                src="./img/foto/mykhailo.jpg"
-                alt="Михайло Єрмаков"
                 width="270"
                 height="260"
+                srcset="
+                  ./img/team/img-4_270.jpg 270w, 
+                  ./img/team/img-4_354.jpg 354w, 
+                  ./img/team/img-4_450.jpg 450w, 
+                  ./img/team/img-4_540.jpg 540w, 
+                  ./img/team/img-4_708.jpg 708w, 
+                  ./img/team/img-4_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./img/team/img-4_450.jpg"
+                alt="Михайло Єрмаков"
               >
               <div class="employee__about">
                 <h3 class="employee__name">Михайло Єрмаков</h3>
