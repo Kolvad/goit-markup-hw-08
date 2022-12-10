@@ -12,12 +12,12 @@ h2 {
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         margin-bottom: 30px;
         font-size: 28px;
         line-height: 1.17;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
         font-size: 36px;
         line-height: 1.16;
     }
